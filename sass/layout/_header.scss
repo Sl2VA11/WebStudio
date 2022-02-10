@@ -1,0 +1,111 @@
+.header {
+  border-bottom: 1px solid var(--border-header);
+}
+.header__container{
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 88px;
+  @media screen and (min-width: 1200px){
+    margin-right: 93px;
+  }
+}
+.header__logo {
+  color: var(--for-all-color);
+}
+.header__nav{
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  color: var(--for-all-color);
+  display: none;
+  @media screen and (min-width: 768px){
+    display: flex;
+    
+  }
+}
+.header__item:not(:last-child) {
+  margin-right: 50px;
+} 
+ 
+.header__link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: none;
+  padding: 32px 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .active-page,
+  &:hover,
+  &:focus,
+  .header__list .active-page {
+    color: var(--blue-color);
+}
+   @media screen and (min-width: 768px){
+    display: flex;
+    
+   }
+   @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+}
+.header-common{
+  @media screen and (min-width: 768px)and (max-width: 1200px){
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.contact {
+  
+  @media screen and (min-width: 768px) and (max-width: 1200px){
+    display: block;
+    margin-left: 84px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    color: var(--after-title);
+  }
+  @media screen and (min-width: 1200px){
+  margin-left: auto;
+  color: var(--after-title);
+  display: flex;
+  align-items: center;
+  }
+}
+.contact__item{
+  &:not(:last-child){
+    margin-bottom: 0;
+  }
+}
+.active-page {
+  color: var(--blue-color);
+  position: relative;
+  display: flex;
+  &::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -1px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+
+}
+}
+
+
+.header__icon{
+  fill: currentColor;
+  margin-right: 10px;
+}
+

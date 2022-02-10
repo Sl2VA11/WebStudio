@@ -1,0 +1,118 @@
+.footer {
+  background-color: var(--background-footer-color);
+  font-style: normal;
+  
+}
+.footer-wrap {
+  display: flex;
+  
+  align-items: baseline;
+  @media screen and (min-width: 480px) and (max-width: 1200px){
+    flex-direction: column;
+  }
+}
+.footer-tablet{
+  // display: flex;
+  // flex-direction: column;
+  @media screen and (min-width: 480px)and (max-width: 1200px){
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+ 
+  @media screen and (min-width: 768px){
+  display: flex;
+  align-items: baseline;  
+  }
+}
+.footer-wrap__item{
+  @media screen and (min-width: 480px) and (max-width: 1200px){
+      margin-bottom: 60px; 
+  }
+  
+  @media screen and (min-width: 768px){
+    &:nth-child(2){
+    margin-left: 165px;
+  }
+  }
+  
+  
+ @media screen and (min-width: 1200px){
+  margin-right: 70px;
+  &:last-child {
+  margin-left: auto;
+  }
+ }
+  
+}
+.footer-wrap-bottom{
+  @media screen and (min-width: 480px) and (max-width: 768px){
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+   margin-right: auto;
+   margin-left: auto;
+ }
+}
+.footer .logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer__logo {
+  color: var(--main-color);
+}
+.footer-address__list{
+  text-align: center;
+}
+.footer-address__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--mail-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+  color: var(--main-color);
+}
+}
+.footer-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+
+.footer-title {
+  
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  @media screen and (min-width: 1200px){
+     text-align: left;
+  }
+}
+
+.footer .social-list__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-color);
+  &:hover,
+  &:focus {
+  background-color: var(--blue-color);
+}
+}
+
+
+
+.footer .social-list__icon,
+.footer .social-list__icon {
+  fill: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+  fill: var(--main-color);
+}
+}
