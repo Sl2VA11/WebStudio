@@ -144,7 +144,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero__btn main-btn" data-modal-open>
+          <button type="button" class="main-btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -813,27 +813,25 @@
               </li>
             </ul>
           </div>
+        </div>         
+        <div class="footer-wrap__item"> 
+          <h3 class="footer-title">Подпишитесь на рассылку</h3>
+          <form action="footer-form" class="footer-form">
+            
+            <label class="footer-form__email">
+              <input type="email" name="mail" placeholder="E-mail" class="footer-form__input"> 
+            </label>  
+            
+            
+            <button type="submit" class="footer-form__btn main-btn">
+              Подписаться
+              <svg class="footer-form__icon" width="24" height="24">
+                <use href="images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+                  
+          </form> 
         </div> 
-        <div class="footer-wrap-bottom">
-          <div class="footer-wrap__item--bottom">
-            <h3 class="footer-title">Подпишитесь на рассылку</h3>
-            <form action="footer-form" class="footer-form">
-              
-              <label class="footer-form__email">
-                <input type="email" name="mail" placeholder="E-mail" class="footer-form__input"> 
-              </label>  
-              
-              
-              <button type="submit" class="footer-form__btn main-btn">
-                Подписаться
-                <svg class="footer-form__icon" width="24" height="24">
-                  <use href="images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-                    
-            </form> 
-          </div> 
-        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -912,7 +910,7 @@
                 </div>
               </label>
             </div>  
-            <!-- <div class="accept"> -->
+            <div class="accept">
               <label class="accept__label-checkbox"> 
                 
                 <input class="accept__checkbox visually-hidden" type="checkbox" name="topic" value="accept">         
@@ -922,7 +920,7 @@
                 <span class="accept__text"> Соглашаюсь с рассылкой и принимаю <a href="./" class="accept__link" target="blank"
                   rel="noreferrer noopener">Условия договора</a> </span> 
               </label>
-            <!-- </div> -->
+            </div>
             
             <button type="submit" id="button" class="accept__btn main-btn">Отправить</button>
               

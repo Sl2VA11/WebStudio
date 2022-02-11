@@ -1,6 +1,7 @@
 
 .portfolio-list__item {
   margin-top: 30px;
+  margin-left: 30px;
   @media screen and (min-width: 768px){
     margin-left: 30px;
     flex-basis: calc(100% / 2 - 30px);
@@ -53,7 +54,12 @@
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--portfolio-border-color);
 }
-
+.bottom{
+  @media screen and (min-width: 768px)and (max-width: 1200px){
+    padding-bottom: 56px;
+  }
+  
+}
 .portfolio-list__title {
   margin-bottom: 4px;
   font-weight: 700;
