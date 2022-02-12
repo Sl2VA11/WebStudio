@@ -22,12 +22,12 @@
           >
           <ul class="header__list list">
             <li class="header__item">
-              <a class="link header__link " href="./index.html"
+              <a class="link header__link active-page" href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="header__item">
-              <a class="link header__link active-page" href="./portfolio.html">Портфолио</a>
+              <a class="link header__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header__item">
               <a class="link header__link" href="">Контакты</a>
@@ -36,7 +36,7 @@
         </nav>
         
         <ul class="header__list contact list">
-          <li class="header__item contact__item">
+          <li class=" contact__item">
             <a
               class="link header__link header-common"
               href="./mailto:info@devstudio.com"
@@ -47,7 +47,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header__item contact__item">
+          <li class=" contact__item">
             <a class="link header__link header-common" href="tel:+380961111111">
               <svg class="header__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-number"></use>
@@ -56,7 +56,7 @@
             </a>
           </li>
         </ul>
-       <button type="button" class="menu-open-btn" data-menu-open>
+        <button type="button" class="menu-open-btn" data-menu-open>
           <svg class="menu-open-btn__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menuburger"></use>
           </svg>
@@ -85,7 +85,7 @@
               </li>
             </ul>
           </div>
-          <div class="mob-menu-center">
+          <div class="mob-menu-contact">
             <ul class="mob-menu-center__list contact list">
               <li class="mob-menu-center__item">
                 <a class="link mob-menu-center__link header-common" href="tel:+380961111111">
@@ -98,32 +98,30 @@
                   
                 </a>
               </li>
-            </ul>
-          </div>
-         <div class="mob-menu-bottom">
-          <ul class="list mob-menu-bottom__list">
-            <li class="mob-menu-bottom__item">
-              <a href="" class="link mob-menu-bottom__link">
-                Instagram
-              </a>
-            </li>
-            <li class="mob-menu-bottom__item">
-              <a href="" class="link mob-menu-bottom__link">
-                Twitter
-              </a>
-            </li>
-            <li class="mob-menu-bottom__item">
-              <a href="" class="link mob-menu-bottom__link">
-                Facebook
-              </a>
-            </li>
-            <li class="mob-menu-bottom__item">
-              <a href="" class="link mob-menu-bottom__link">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-         </div>
+            </ul>           
+            <ul class="list mob-menu-bottom__list">
+              <li class="mob-menu-bottom__item">
+                <a href="" class="link mob-menu-bottom__link">
+                  Instagram
+                </a>
+              </li>
+              <li class="mob-menu-bottom__item">
+                <a href="" class="link mob-menu-bottom__link">
+                  Twitter
+                </a>
+              </li>
+              <li class="mob-menu-bottom__item">
+                <a href="" class="link mob-menu-bottom__link">
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-menu-bottom__item">
+                <a href="" class="link mob-menu-bottom__link">
+                  LinkedIn
+                </a>
+              </li>
+            </ul>          
+          </div>  
         </div> 
       </div>
     </header>
@@ -165,6 +163,7 @@
                           ./images/portfolio/portfolio-1-desktop@2x.jpg 2x
                         "
                         media="(min-width: 1200px)"
+                        type="image/jpeg"
                       />
 
                       <source
@@ -181,6 +180,7 @@
                           ./images/portfolio/portfolio-1-tablet@2x.jpg 2x
                         "
                         media="(min-width: 768px)"
+                        type="image/jpeg"
                       />
 
                       <source
@@ -197,9 +197,10 @@
                           ./images/portfolio/portfolio-1-mobile@2x.jpg 2x
                         "
                         media="(max-width: 767px)"
+                        type="image/jpeg"
                       />
 
-                      <img src="#" alt="Веб-сайт на экране ноутбука" />
+                      <img src="./images/portfolio/portfolio-1-mobile.jpg" alt="Веб-сайт на экране ноутбука" width="450" height="294"/>
                     </picture>
                   </div>  
                   <div class="portfolio-list__border">  
@@ -234,6 +235,7 @@
                           ./images/portfolio/portfolio-2-desktop@2x.jpg 2x
                         "
                         media="(min-width: 1200px)"
+                        type="image/jpeg"
                       />
 
                       <source
@@ -250,6 +252,7 @@
                           ./images/portfolio/portfolio-2-tablet@2x.jpg 2x
                         "
                         media="(min-width: 768px)"
+                        type="image/jpeg"
                       />
 
                       <source
@@ -266,9 +269,10 @@
                           ./images/portfolio/portfolio-2-mobile@2x.jpg 2x
                         "
                         media="(max-width: 767px)"
+                        type="image/jpeg"
                       />
 
-                      <img src="#" alt="Баскетболисты с мячем" />
+                      <img src="./images/portfolio/portfolio-2-mobile.jpg" alt="Баскетболисты с мячем" width="450" height="294"/>
                     </picture>
                   </div>
                   <div class="portfolio-list__border ">
@@ -302,6 +306,7 @@
                         ./images/portfolio/portfolio-3-desktop@2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -318,6 +323,7 @@
                         ./images/portfolio/portfolio-3-tablet@2x.jpg 2x
                       "
                       media="(min-width: 768px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -334,9 +340,10 @@
                         ./images/portfolio/portfolio-3-mobile@2x.jpg 2x
                       "
                       media="(max-width: 767px)"
+                      type="image/jpeg"
                     />
 
-                    <img src="#" alt="Логотип ресторана Seafood" />
+                    <img src="./images/portfolio/portfolio-3-mobile.jpg" alt="Логотип ресторана Seafood" width="450" height="294"/>
                     </picture>
                   </div>
                   <div class="portfolio-list__border">
@@ -370,6 +377,7 @@
                         ./images/portfolio/portfolio-4-desktop@2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -386,6 +394,7 @@
                         ./images/portfolio/portfolio-4-tablet@2x.jpg 2x
                       "
                       media="(min-width: 768px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -402,9 +411,10 @@
                         ./images/portfolio/portfolio-4-mobile@2x.jpg 2x
                       "
                       media="(max-width: 767px)"
+                      type="image/jpeg"
                     />
 
-                    <img src="#" alt="Наушники" />
+                    <img src="./images/portfolio/portfolio-4-mobile.jpg" alt="Наушники" width="450" height="294"/>
                     </picture>
                   </div>
                   <div class="portfolio-list__border ">
@@ -439,6 +449,7 @@
                         ./images/portfolio/portfolio-5-desktop@2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -455,6 +466,7 @@
                         ./images/portfolio/portfolio-5-tablet@2x.jpg 2x
                       "
                       media="(min-width: 768px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -471,9 +483,10 @@
                         ./images/portfolio/portfolio-5-mobile@2x.jpg 2x
                       "
                       media="(max-width: 767px)"
+                      type="image/jpeg"
                     />
 
-                    <img src="#" alt="Две коробки" />
+                    <img src="./images/portfolio/portfolio-5-mobile.jpg" alt="Две коробки" width="450" height="294"/>
                     </picture>
                   </div>
                   <div class="portfolio-list__border">
@@ -506,6 +519,7 @@
                         ./images/portfolio/portfolio-6-desktop@2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -522,6 +536,7 @@
                         ./images/portfolio/portfolio-6-tablet@2x.jpg 2x
                       "
                       media="(min-width: 768px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -538,9 +553,10 @@
                         ./images/portfolio/portfolio-6-mobile@2x.jpg 2x
                       "
                       media="(max-width: 767px)"
+                      type="image/jpeg"
                     />
 
-                    <img src="#" alt="Веб-сайт на экране монитора" />
+                    <img src="./images/portfolio/portfolio-6-mobile.jpg" alt="Веб-сайт на экране монитора" width="450" height="294"/>
                     </picture>
                     
                   </div>  
@@ -576,6 +592,7 @@
                         ./images/portfolio/portfolio-7-desktop@2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -592,6 +609,7 @@
                         ./images/portfolio/portfolio-7-tablet@2x.jpg 2x
                       "
                       media="(min-width: 768px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -608,9 +626,10 @@
                         ./images/portfolio/portfolio-7-mobile@2x.jpg 2x
                       "
                       media="(max-width: 767px)"
+                      type="image/jpeg"
                     />
 
-                    <img src="#" alt="Открытый журнал" />
+                    <img src="./images/portfolio/portfolio-7-mobile.jpg" alt="Открытый журнал" width="450" height="294"/>
                     </picture>
                   </div>  
                   
@@ -646,6 +665,7 @@
                         ./images/portfolio/portfolio-8-desktop@2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -662,6 +682,7 @@
                         ./images/portfolio/portfolio-8-tablet@2x.jpg 2x
                       "
                       media="(min-width: 768px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -678,9 +699,10 @@
                         ./images/portfolio/portfolio-8-mobile@2x.jpg 2x
                       "
                       media="(max-width: 767px)"
+                      type="image/jpeg"
                     />
 
-                    <img src="#" alt="Бирка" />
+                    <img src="./images/portfolio/portfolio-8-mobile.jpg" alt="Бирка" width="450" height="294"/>
                     </picture>
                   </div>
                   <div class="portfolio-list__border">
@@ -714,6 +736,7 @@
                         ./images/portfolio/portfolio-9-desktop@2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -730,6 +753,7 @@
                         ./images/portfolio/portfolio-9-tablet@2x.jpg 2x
                       "
                       media="(min-width: 768px)"
+                      type="image/jpeg"
                     />
 
                     <source
@@ -746,9 +770,10 @@
                         ./images/portfolio/portfolio-9-mobile@2x.jpg 2x
                       "
                       media="(max-width: 767px)"
+                      type="image/jpeg"
                     />
 
-                    <img src="#" alt="Приложение на экране ноутбука" />
+                    <img src="./images/portfolio/portfolio-9-mobile.jpg" alt="Приложение на экране ноутбука" width="450" height="294"/>
                     </picture>
                   </div>
                   <div class="portfolio-list__border">
