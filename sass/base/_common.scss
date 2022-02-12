@@ -8,6 +8,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--after-title-color);
 }
+.no-scroll{
+  overflow: hidden;
+}
 .list {
   list-style: none;
 }

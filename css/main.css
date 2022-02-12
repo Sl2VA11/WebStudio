@@ -36,6 +36,10 @@ body {
   color: var(--after-title-color);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -103,10 +107,12 @@ body {
 }
 
 .conteiner-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  padding-left: 40px;
-  padding-bottom: 48px;
+  padding: 48px 40px;
 }
 
 .card-set {
@@ -278,7 +284,6 @@ img {
   .header-common {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -287,9 +292,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .contact {
     display: block;
-    margin-left: 84px;
-    margin-top: 21px;
-    margin-bottom: 21px;
+    margin-left: auto;
     color: var(--after-title);
   }
 }
@@ -305,6 +308,18 @@ img {
 
 .contact__item:not(:last-child) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .active-page {
@@ -370,10 +385,9 @@ img {
 }
 
 .menu-close-btn {
-  display: block;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-right: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   border: none;
   background-color: var(--main-color);
   cursor: pointer;
@@ -403,10 +417,8 @@ img {
   color: var(--blue-color);
 }
 
-.mob-menu-center {
-  position: absolute;
-  bottom: 134px;
-  left: 40px;
+.mob-menu-center__list {
+  margin-bottom: 64px;
 }
 
 .mob-menu-center__item:not(:last-child) {
@@ -430,34 +442,22 @@ img {
   color: #757575;
 }
 
-.mob-menu-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 40px;
-}
-
 .mob-menu-bottom__list {
   display: flex;
-  padding-bottom: 40px;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 
 .mob-menu-bottom__item {
   position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .mob-menu-bottom__item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.mob-menu-bottom__item:not(:last-child):after {
-  content: "";
-  display: flex;
-  width: 22px;
-  top: 10px;
-  right: -20px;
-  position: absolute;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-menu-bottom__link {
@@ -723,15 +723,12 @@ img {
 @media screen and (min-width: 768px) {
   .clients__item {
     flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
     flex-basis: calc(100% / 6 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
   }
 }
 
@@ -806,7 +803,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-wrap__item:not(:last-child) {
     margin-bottom: 60px;
   }
@@ -1084,6 +1081,7 @@ img {
   display: flex;
   flex-direction: column;
   transition-duration: 250ms;
+  height: 100%;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1123,14 +1121,9 @@ img {
 }
 
 .portfolio-list__border {
+  flex-grow: 1;
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--portfolio-border-color);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .bottom {
-    padding-bottom: 56px;
-  }
 }
 
 .portfolio-list__title {
@@ -1172,8 +1165,9 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 450px;
+  max-width: 450px;
   min-height: 609px;
+  width: 100%;
   padding: 40px;
   transition-duration: 550ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1295,7 +1289,7 @@ img {
   transition-property: border;
 }
 
-.modal-form__text ::placeholder {
+.modal-form__text::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.17;
@@ -1321,6 +1315,7 @@ img {
 }
 
 .accept__checkmark {
+  flex-shrink: 0;
   cursor: pointer;
   fill: var(--main-color);
   margin-right: 7px;
@@ -1331,7 +1326,8 @@ img {
   transition-property: border;
 }
 
-input:focus + .accept__checkmark {
+.accept__checkmark input:focus,
+input:hover + .accept__checkmark {
   border: 2px solid var(--blue-color);
 }
 
@@ -1343,12 +1339,10 @@ input:focus + .accept__checkmark {
 }
 
 .accept__text {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
   display: flex;
   align-items: center;
-  color: var(--after-title-color);
 }
 
 .accept__link {

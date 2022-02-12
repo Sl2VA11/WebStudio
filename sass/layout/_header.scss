@@ -58,20 +58,24 @@
 }
 .header-common{
   @media screen and (min-width: 768px)and (max-width: 1200px){
+    // &:not(:last-child){
+    //   margin-bottom: 30px;
+      
+    // }
+    
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
     padding-top: 0;
     padding-bottom: 0;
+    
   }
 }
 .contact {
   
   @media screen and (min-width: 768px) and (max-width: 1200px){
     display: block;
-    margin-left: 84px;
-    margin-top: 21px;
-    margin-bottom: 21px;
+    margin-left: auto;
+    
     color: var(--after-title);
   }
   @media screen and (min-width: 1200px){
@@ -84,6 +88,18 @@
 .contact__item{
   &:not(:last-child){
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px)and (max-width: 1200px){
+    &:not(:last-child){
+      margin-bottom: 10px;
+      
+    }
+  }
+  @media screen and (min-width: 1200px){
+     &:not(:last-child){
+      margin-right: 30px;
+     }
+    
   }
 }
 .active-page {
